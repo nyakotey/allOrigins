@@ -16,7 +16,7 @@ A free and open source javascript clone of [AnyOrigin](https://web.archive.org/w
 To `fetch` data from http://wikipedia.org:
 
 ```js
-fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://wikipedia.org')}`)
+fetch(`https://allorigin.netlify.app/get?url=${encodeURIComponent('https://wikipedia.org')}`)
   .then(response => {
     if (response.ok) return response.json()
     throw new Error('Network response was not ok.')
@@ -27,7 +27,7 @@ fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://wikipedi
 Or with jQuery
 
 ```js
-$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://wikipedia.org'), function (data) {
+$.getJSON('https://allorigin.netlify.app/get?url=' + encodeURIComponent('https://wikipedia.org'), function (data) {
     alert(data.contents);
 });
 ```
@@ -35,16 +35,16 @@ $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://wi
 
 ###### charset
 **Description:** Set the response character encoding (charset)  \
-**Example:** `https://api.allorigins.win/get?charset=ISO-8859-1&url=https://pt.wikipedia.org/`
+**Example:** `https://allorigin.netlify.app/get?charset=ISO-8859-1&url=https://pt.wikipedia.org/`
 
 
 ###### raw
 **Description:** Get the raw contents ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))  \
-**Example:** `https://api.allorigins.win/raw?url=https://example.org/`
+**Example:** `https://allorigin.netlify.app/raw?url=https://example.org/`
 
 ###### callback
 **Description:** Get a [JSONP](https://www.w3schools.com/js/js_json_jsonp.asp) response  \
-**Example:** `https://api.allorigins.win/get?callback=myFunc&url=https://example.org/`
+**Example:** `https://allorigin.netlify.app/get?callback=myFunc&url=https://example.org/`
 
 
 ### On your own server
